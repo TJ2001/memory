@@ -9,10 +9,6 @@ $("#card1").click(function(){
     $("#showCard1").delay("fast").fadeOut();
     $("#showCard3").delay("fast").fadeOut();
   }
-  // if (card3 != 1){
-  //   $("#card1").delay(500).fadeToggle();
-  //   $("#showCard1").delay(500).fadeToggle();
-  // }
 });
 
 $("#showCard1").click(function(){
