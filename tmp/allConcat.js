@@ -4,15 +4,15 @@ $("#card1").click(function(){
   $("#showCard1").toggle();
   $("#showCard1").css("padding", "1px");
   $("#showCard1").css("border", "5px solid #ffff00");
-  card1 = 1;
-  if ((card1 === 1) && (card3 === 1)){
+  card1 += 1;
+  if (card1 === card3){
     $("#showCard1").delay("fast").fadeOut();
     $("#showCard3").delay("fast").fadeOut();
   }
-  if (card3 != 1){
-    $("#card1").delay(500).fadeToggle();
-    $("#showCard1").delay(500).fadeToggle();
-  }
+  // if (card3 != 1){
+  //   $("#card1").delay(500).fadeToggle();
+  //   $("#showCard1").delay(500).fadeToggle();
+  // }
 });
 
 $("#showCard1").click(function(){
@@ -38,8 +38,8 @@ $("#showCard2").click(function(){
 $("#card3").click(function(){
   $("#card3").toggle();
   $("#showCard3").toggle();
-  card3 = 1;
-  if ((card1 === 1) && (card3 === 1)){
+  card3 += 1;
+  if (card1 === card3){
     $("#showCard3").delay("fast").fadeOut();
     $("#showCard1").delay("fast").fadeOut();
   }
